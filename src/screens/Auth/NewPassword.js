@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
     header:{
         flex:.09,
         backgroundColor:'#e52881',
-        borderBottomLeftRadius:15,
-        borderBottomRightRadius:15,
+        borderBottomLeftRadius:5,
+        borderBottomRightRadius:5,
     },
     bak:{
         fontWeight:'bold',

@@ -17,6 +17,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const LoginScreen = ({navigation}) => {
   return (
@@ -43,7 +44,7 @@ const LoginScreen = ({navigation}) => {
           <Text style={styles.tfor}>Forgot password?</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.lbut}>
+        <TouchableOpacity style={styles.lbut} onPress={() => navigation.navigate('home')}>
         <View>
           <Text style={styles.tlbut}>Login</Text>
         </View>
