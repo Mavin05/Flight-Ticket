@@ -36,7 +36,7 @@ const LoginScreen = ({navigation}) => {
         </View>
         <View style={styles.data}>
           <TextInput style={styles.eml} placeholder='Email Id'></TextInput>
-          <TextInput style={styles.pass} placeholder='password'></TextInput>
+          <TextInput style={styles.pass} placeholder='password' secureTextEntry={true}></TextInput>
         </View>
         <View style={styles.for}>
           <TouchableOpacity onPress={() => navigation.navigate('newpassword')}>
