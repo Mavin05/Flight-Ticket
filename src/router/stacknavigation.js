@@ -7,6 +7,8 @@ import NewPassword from '../screens/Auth/NewPassword';
 import HomeScreen from '../screens/Auth/HomeScreen';
 import LocationSelection from '../screens/Auth/LocationSelection';
 import FlightAvailability from '../screens/Auth/FlightAvailability';
+import SuggestionScreen from '../screens/SuggestionScreen';
+import UpcomingTripScreen from '../screens/Auth/UpcomingTripScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +22,8 @@ function MyStack() {
         <Stack.Screen name="home" component={HomeScreen} />
         <Stack.Screen name="locationselection" component={LocationSelection} />
         <Stack.Screen name="flightavailablity" component={FlightAvailability} />
+        <Stack.Screen name="suggestion" component={SuggestionScreen} />
+        <Stack.Screen name="upcoming" component={UpcomingTripScreen} />
       </Stack.Navigator>
   );
 }

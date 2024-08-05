@@ -101,7 +101,7 @@ const HomeScreen = ({navigation}) => {
           <Text style={styles.tsug}>Suggested for you</Text>
         </View>
         <View style={styles.view}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate('suggestion')}>
             <View>
               <Image style={styles.viewimg} source={require('./../../../assets/images/arrow-icon.png')} />
             </View>
@@ -136,7 +136,7 @@ const HomeScreen = ({navigation}) => {
           <Text style={styles.tsug}>Upcoming Trips</Text>
         </View>
         <View style={styles.view}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate('upcoming')}>
             <View>
               <Image style={styles.viewimg} source={require('./../../../assets/images/arrow-icon.png')} />
             </View>
@@ -165,6 +165,7 @@ const HomeScreen = ({navigation}) => {
         </View>
       </View>
 <View style={styles.fig}></View>
+
       {/* buttom tab */}
 
       <View style={styles.buttomtab}>
