@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './../screens/Auth/LoginScreen'
 import NewPassword from '../screens/Auth/NewPassword';
 import HomeScreen from '../screens/Auth/HomeScreen';
+import LocationSelection from '../screens/Auth/LocationSelection';
+import FlightAvailability from '../screens/Auth/FlightAvailability';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +18,8 @@ function MyStack() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="newpassword" component={NewPassword} />
         <Stack.Screen name="home" component={HomeScreen} />
+        <Stack.Screen name="locationselection" component={LocationSelection} />
+        <Stack.Screen name="flightavailablity" component={FlightAvailability} />
       </Stack.Navigator>
   );
 }
