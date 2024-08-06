@@ -9,6 +9,7 @@ import LocationSelection from '../screens/Auth/LocationSelection';
 import FlightAvailability from '../screens/Auth/FlightAvailability';
 import SuggestionScreen from '../screens/Auth/SuggestionScreen';
 import UpcomingTripScreen from '../screens/Auth/UpcomingTripScreen';
+import Seatselection from '../screens/Auth/Seatselection';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ function MyStack() {
         <Stack.Screen name="flightavailablity" component={FlightAvailability} />
         <Stack.Screen name="suggestion" component={SuggestionScreen} />
         <Stack.Screen name="upcoming" component={UpcomingTripScreen} />
+        <Stack.Screen name="seatselection" component={Seatselection} />
       </Stack.Navigator>
   );
 }

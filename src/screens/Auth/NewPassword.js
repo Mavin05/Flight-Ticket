@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View, TextInput, ScrollView, StatusBar  } from 'react-native'
+import { StyleSheet, Image, Text, TouchableOpacity, View, TextInput, ScrollView, StatusBar  } from 'react-native'
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
@@ -12,7 +12,7 @@ const NewPassword = ({navigation}) => {
       />
         <View style={styles.header}>
             <TouchableOpacity onPress={()=>navigation.goBack()}>
-            <Text style={styles.bak}>Back</Text>
+            <Image style={styles.bak} source={require('./../../../assets/images/back.png')}/>
             </TouchableOpacity>
         </View>
         <View style={styles.dta}>
@@ -42,12 +42,15 @@ const styles = StyleSheet.create({
         backgroundColor:'#e52881',
         borderBottomLeftRadius:5,
         borderBottomRightRadius:5,
+        padding:10,
+        paddingLeft:20,
     },
     bak:{
-        fontWeight:'bold',
-        fontSize:22,
-        padding:12,
-        color:'#ffff',
+      width:30,
+      height:30,
+      borderRadius:8,
+      borderWidth:1,
+      borderColor:'#ffff',
     },
     dta:{
         marginVertical:"5%",
