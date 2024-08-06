@@ -7,7 +7,7 @@ import NewPassword from '../screens/Auth/NewPassword';
 import HomeScreen from '../screens/Auth/HomeScreen';
 import LocationSelection from '../screens/Auth/LocationSelection';
 import FlightAvailability from '../screens/Auth/FlightAvailability';
-import SuggestionScreen from '../screens/SuggestionScreen';
+import SuggestionScreen from '../screens/Auth/SuggestionScreen';
 import UpcomingTripScreen from '../screens/Auth/UpcomingTripScreen';
 
 const Stack = createNativeStackNavigator();
