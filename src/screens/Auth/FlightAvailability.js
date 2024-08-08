@@ -145,6 +145,7 @@ const FlightAvailability = ({navigation}) => {
             <Image source={{uri: item.imageURL}} style={{width:20, height:20,}}/>
             <Text style={styles.meals}>{item.title}</Text>
             <Text style={styles.timel}>{item.timeleft}</Text>
+            <Image style={styles.flighcen} source={require('./../../../assets/images/cen-flight.png')}/>
             <Text style={styles.timer}>{item.timeright}</Text>
             <Text style={styles.locleft}>{item.locationleft}</Text>
             <Text style={styles.locrig}>{item.locationright}</Text>
@@ -253,8 +254,9 @@ const styles = StyleSheet.create({
   timer:{
     paddingLeft:260,
     fontSize:27,
-    marginVertical:-34,
+    marginVertical:-40,
     fontWeight:'bold',
+    top:"-6%",
     color:'#000',
   },
   locleft:{
@@ -293,5 +295,12 @@ const styles = StyleSheet.create({
     top:"-43%",
     fontWeight:'bold',
     fontSize:20,
+  },
+  flighcen:{
+    width:35,
+    height:35,
+    alignSelf:'center',
+    top:"-5%",
+    marginTop:-18,
   }
 })
