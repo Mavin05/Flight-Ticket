@@ -73,7 +73,6 @@ const flightdetails = [
   {
     id: 'd',
     title: 'Free Meal',
-    title: 'Free Meal',
     timeleft: '11:05',
     timeright:'20:55',
     loctionleft:'SFO',
@@ -86,7 +85,6 @@ const flightdetails = [
   },
   {
     id: 'e',
-    title: 'Free Meal',
     title: 'Free Meal',
     timeleft: '12:05',
     timeright:'21:55',

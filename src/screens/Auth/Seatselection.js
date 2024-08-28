@@ -155,13 +155,29 @@ const Seatselection = ({ navigation }) => {
             shadowRadius: 5,
           }} style={styles.buttom}>
       <View style={styles.passdetails}>
-        <View style={styles.classd}></View>
-        <View style={styles.passd}></View>
-        <View style={styles.seatsd}></View>
+        <View style={styles.classd}>
+        <Text style={styles.class}>Class</Text>
+        <Text style={styles.classdet}>Business</Text>
+        </View>
+        <View style={styles.passd}>
+        <Text style={styles.class}>Passengers</Text>
+        <Text style={styles.classdet}>2 Adult</Text>
+        </View>
+        <View style={styles.seatsd}>
+        <Text style={styles.class}>Seats</Text>
+        <Text style={styles.classdet}>C2,D2</Text>
+        </View>
       </View>
       <View style={styles.pricepay}>
-        <View style={styles.price}></View>
-        <View style={styles.pay}></View>
+        <View style={styles.price}>
+        <Text style={styles.class}>Total Price</Text>
+        <Text style={styles.classdet}>$7,858</Text>
+        </View>
+        <TouchableOpacity style={styles.pay} onPress={()=>navigation.navigate('downloadpage')}>
+        <View>
+          <Text style={styles.place}>Place Order  ></Text>
+        </View>
+        </TouchableOpacity>
       </View>
       </DropShadow>
     </SafeAreaView>
@@ -263,7 +279,8 @@ const styles = StyleSheet.create({
   },
   buttom:{
     flex:.17,
-    backgroundColor:'red',
+    backgroundColor:'#ffff',
+    borderRadius:10,
   },
   seatb:{
     marginTop:-43,
@@ -305,33 +322,46 @@ const styles = StyleSheet.create({
   },
   passdetails:{
     flex:.5,
-    backgroundColor:'green',
     flexDirection:'row',
   },
   classd:{
-    flex:.33,
-    backgroundColor:'yellow',
+    flex:.40,
+    margin:10,
+  },
+  classdet:{
+    fontWeight:'bold',
+    fontSize:17,
+  },
+  class:{
+    color:'#bab9bd',
   },
   passd:{
-    flex:.34,
-    backgroundColor:'orange',
+    flex:.41,
+    padding:10,
   },
   seatsd:{
-    flex:.33,
-    backgroundColor:'red',
+    flex:.19,
+    padding:10,
   },
   pricepay:{
     flex:.5,
-    backgroundColor:'green',
     flexDirection:'row',
   },
   price:{
-    flex:.4,
-    backgroundColor:'red',
+    flex:.25,
+    padding:10,
   },
   pay:{
-    flex:.6,
-    backgroundColor:'yellow',
+    flex:.7,
+    backgroundColor:'#e52881',
+    borderRadius:15,
+    marginVertical:5,
+  },
+  place:{
+    alignSelf:'center',
+    fontSize:22,
+    marginTop:17,
+    color:'#ffff',
   }
 
 })

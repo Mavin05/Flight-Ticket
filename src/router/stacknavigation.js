@@ -10,6 +10,7 @@ import FlightAvailability from '../screens/Auth/FlightAvailability';
 import SuggestionScreen from '../screens/Auth/SuggestionScreen';
 import UpcomingTripScreen from '../screens/Auth/UpcomingTripScreen';
 import Seatselection from '../screens/Auth/Seatselection';
+import DownloadPage from '../screens/Auth/DownloadPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ function MyStack() {
         <Stack.Screen name="suggestion" component={SuggestionScreen} />
         <Stack.Screen name="upcoming" component={UpcomingTripScreen} />
         <Stack.Screen name="seatselection" component={Seatselection} />
+        <Stack.Screen name="downloadpage" component={DownloadPage} />
       </Stack.Navigator>
   );
 }
