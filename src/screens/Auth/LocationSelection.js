@@ -1,5 +1,5 @@
 import { FlatList, Image, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 const location = [
   {
@@ -16,14 +16,14 @@ const location = [
   },
 ];
 
-const LocationSelection = () => {
+const LocationSelection = ({navigation}) => {
   return (
     <SafeAreaView style={styles.containter}>
       <ScrollView>
       <View style={styles.sat}></View>
       <View style={styles.head}>
         <View style={styles.back}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
           <Image style={styles.backi} source={require('./../../../assets/images/back.png')}/>
           </TouchableOpacity>
         </View>

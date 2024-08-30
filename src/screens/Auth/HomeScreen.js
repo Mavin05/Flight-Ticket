@@ -3,7 +3,7 @@ import {
   ImageBackground, TextInput, TouchableOpacity,
   FlatList, ScrollView,
 } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import DropShadow from 'react-native-drop-shadow'
 
@@ -36,6 +36,7 @@ const data = [
 ];
 
 const HomeScreen = ({navigation}) => {
+  const [location, setLocation] = useState('');
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="transparent"
@@ -73,7 +74,8 @@ const HomeScreen = ({navigation}) => {
           }}>
             
           <View style={styles.search}>
-            <TextInput style={styles.locs} onPress={() => navigation.navigate('locationselection')} placeholder='Location'></TextInput>
+            <TextInput style={styles.locs} 
+           onPress={() => navigation.navigate('locationselection')} placeholder='Location'></TextInput>
             <TextInput style={styles.des} onPress={() => navigation.navigate('locationselection')} placeholder='Destination'></TextInput>
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('flightavailablity')}>
